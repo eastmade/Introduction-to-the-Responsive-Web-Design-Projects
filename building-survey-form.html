@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Coffee</title>
+	<link rel="stylesheet" type="text/css" href="building-survey-form.css">
+</head>
+<body>
+
+<!-- <video width="1280" height="720" class="background" autoplay muted loop>
+  <source src="https://codepen.jonnitto.ch/BackgroundVideo.mp4" type="video/mp4">
+
+</video> -->
+
+<h1 id="title">Survey Coffee</h1>
+
+<div id="form-outer">
+
+
+
+  <p id="description">
+    Let us know how we can serve you the best of Coffee
+  </p>
+
+
+  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* E-Mail: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="150" class="input-field" placeholder="Age">
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes your profession?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option value="1">Student</option>
+      <option value="2">Teacher</option>
+      <option value="3">Full Time Job</option>
+      <option value="4">Part Time Job</option>
+      <option value="5">Entrepreneur</option>
+      <option value="6">Freelancer</option>
+      <option value="7">Government</option>
+      <option value="8">Military</option>
+      <option value="9">Medical</option>
+      <option value="10">Engineer</option>       
+      <option value="11">Full Time Learner</option>
+      <option value="12">Religious Teacher</option>
+      <option value="13">Unemployer</option>
+      <option value="14">Retired</option>
+      <option value="15">Prefer not to say</option>
+      <option value="16">Other</option>
+    </select>
+      </div>
+    </div>
+
+
+     <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* Have you heard about Survey Coffee?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Not until now<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Yes but I haven't tried<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Yes and I have tried<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Yes and I'm a regular customer<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Sellect your favourite types of Coffee<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Café Latte</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Cappuccino</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Espresso</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Flat White</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Long Black</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Macchiato</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Mochaccino</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Affogato</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Frappe</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Black Eye</label></li>
+          <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRatings">Mocha</label></li>
+          <li class="checkbox"><label><input name="prefer" value="12" type="checkbox" class="userRatings">Breve</label></li>
+          <li class="checkbox"><label><input name="prefer" value="13" type="checkbox" class="userRatings">Eiscaffee</label></li>
+          <li class="checkbox"><label><input name="prefer" value="14" type="checkbox" class="userRatings">Café Au Lait</label></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Your most important taste aspect(s) of Coffee:<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Weak & Milky</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Weak & Black</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Somewhere in the middle</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Strong & Milky</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Strong & Black</label></li>
+        </ul>
+      </div>
+    </div>
+
+
+        <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* Select how often you purchase your favourite Coffee:</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Many Times a Day<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>A Few Times a Day<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Daily<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>A Few Days a Week<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Weekly<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Monthly<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Never Purchase<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+
+
+        <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">Select the locations you mostly enjoy your Coffee: </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="1">Office</option>
+      <option value="2">School</option>
+      <option value="3">Library</option>
+      <option value="4">Home</option>
+      <option value="5">Coffee Shop</option>
+      <option value="6">Outdoor</option>
+      <option value="7">In Your Car</option>
+    </select>
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">What role does Coffee play in your life?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+
+
+
+  </form>
+
+
+
+</div>
+
+
+<footer id="footer">Coffee Jihnoe</footer>
+
+</body>
+</html>

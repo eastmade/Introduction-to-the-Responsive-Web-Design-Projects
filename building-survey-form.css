@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Schoolbell&display=swap);
+
+/*<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">*/
+
+
+/*.background {
+  position: fixed;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  height: 80%;
+  width: 100%;
+}
+*/
+/*html,
+body {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  background-color: #a9d7d1;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 320px;
+  position: relative;
+    margin: 30px;
+    z-index: 3;
+}*/
+html,
+body{
+  font-family: 'Schoolbell', Helvetica, sans-serif;
+  text-align: center;
+/*  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 0px;*/
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+/*  text-align: center;*/
+  position: fixed;
+  color: #635341;
+  z-index: -1;
+}
+
+#form-outer {
+/*  background-color: rgb(250, 250, 250);*/
+  background:linear-gradient(35deg, #ccffff, #ffcccc);
+/*  margin: 0 auto;*/
+
+  margin: 100px auto;
+/*  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;*/
+  border-radius: 6px;
+  width: 75%;
+  max-width: 1000px;
+  padding: 10px;
+  padding-top: 20px;
+/*  position: top;*/
+  z-index: 1;
+/*        position: relative;*/
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+#userAge {
+  width: 40px;
+}
+
+.input-field {
+  height: 20px;
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  font-family: 'Schoolbell', Helvetica, sans-serif;
+}
+
+.dropdown {
+  height: 30px;
+  width: 170px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  font-family: 'Schoolbell', Helvetica, sans-serif;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+/*  display: -ms-flexbox;;*/
+}
+
+
+#comments{
+height:100px;
+width: 300px;
+resize:vertical;
+font-family: 'Schoolbell', Helvetica, sans-serif;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: 'Schoolbell', Helvetica, sans-serif;
+  font-size: 1.2em;
+  height: 40px;
+  width: 100px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+#footer {
+  font-size: 3em;
+  font-weight: bold;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 20px auto;
+  color: #635341;
+  position: fixed;
+  z-index: -1;
+}
+
+
+
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
