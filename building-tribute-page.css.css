@@ -1,0 +1,112 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #E7305B;
+  margin: 0;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family:regular;
+  font-weight:bold;
+  font-style:oblique;
+  color:#E7305B;
+  margin-bottom: 0;
+  
+}
+
+p{
+  font-size:1.5rem;
+  color: #477ca7;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
+figcaption{
+  font-weight:bold;
+}
+
+h4{
+  font-size: 2.25rem;
+  padding: 20px;
+}
+
+a {
+  color: #477ca7;
+  text-decoration: none;
+}
+
+#main {
+  margin: 30px 120px;
+  padding: 0;
+  border-radius: 10px;
+  background: #eee;
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 1000px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+#headline {
+  margin: 50px 0;
+  color: #477ca7;
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+ul {
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  text-align: justify;
+  line-height: 2;
+}
+
+li {
+  margin: 12px 0;
+}
+
+}
+blockquote {
+  font-style: italic;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+}
